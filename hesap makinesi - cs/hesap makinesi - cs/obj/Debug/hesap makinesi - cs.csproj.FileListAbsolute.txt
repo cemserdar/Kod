@@ -1,0 +1,10 @@
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\bin\Debug\hesap makinesi - cs.exe.config
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\bin\Debug\hesap makinesi - cs.exe
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\bin\Debug\hesap makinesi - cs.pdb
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\obj\Debug\hesap makinesi - cs.csprojAssemblyReference.cache
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\obj\Debug\hesap_makinesi___cs.Form1.resources
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\obj\Debug\hesap_makinesi___cs.Properties.Resources.resources
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\obj\Debug\hesap makinesi - cs.csproj.GenerateResource.cache
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\obj\Debug\hesap makinesi - cs.csproj.CoreCompileInputs.cache
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\obj\Debug\hesap makinesi - cs.exe
+C:\Users\cemse\source\repos\hesap makinesi - cs\hesap makinesi - cs\obj\Debug\hesap makinesi - cs.pdb
