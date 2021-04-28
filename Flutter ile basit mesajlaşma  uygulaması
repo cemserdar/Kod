@@ -1,0 +1,118 @@
+import 'package:flutter/material.dart';
+
+import 'anaekran.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Chat Uygulaması Arayüzü',
+      home: Iskele(),
+    );
+  }
+}
+
+class Iskele extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Chat Uygulaması'),
+      ),
+      body: AnaEkran(),
+    );
+  }
+}
+
+class Arkaplanrengi extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(color: Colors.blueAccent),
+    );
+  }
+}
+
+
+class AnaEkran extends StatefulWidget {
+  @override
+  _AnaEkranState createState() => _AnaEkranState();
+}
+
+class _AnaEkranState extends State<AnaEkran> {
+  TextEditingController t1 = TextEditingController();
+  List<MesajBalonu> mesajListesi = [];
+  listeyeEkle(String gelenMesaj) {
+    setState(() {
+      MesajBalonu mesajNesnesi = MesajBalonu(mesaj: gelenMesaj);
+      mesajListesi.insert(0, mesajNesnesi);
+      t1.clear();
+    });
+  }
+
+  Widget metinGirisAlani() {
+    return Container(
+      child: Row(
+        children: <Widget>[
+          Flexible(
+            child: TextField(
+              controller: t1,
+            ),
+          ),
+          IconButton(
+            onPressed: () => listeyeEkle(t1.text),
+            icon: Icon(Icons.send),
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        children: <Widget>[
+          Flexible(
+            child: ListView.builder(
+                itemCount: mesajListesi.length,
+                itemBuilder: (_, indeksNumarai) => mesajListesi[indeksNumarai]),
+          ),
+          Divider(
+            thickness: 1,
+          ),
+          metinGirisAlani(),
+        ],
+      ),
+    );
+  }
+}
+
+String isim = 'İsim';
+
+import 'package:flutter/material.dart';
+
+import 'anaekran.dart';
+
+class MesajBalonu extends StatelessWidget {
+  String mesaj;
+
+  MesajBalonu({this.mesaj});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        children: [
+          CircleAvatar(child: Text(isim[0])),
+          Column(children: <Widget>[
+            Text(isim),
+            Text(mesaj),
+          ])
+        ],
+      ),
+    );
+  }
+}
+
